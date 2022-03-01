@@ -1,0 +1,16 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+<div class="jumbotron">
+  <h1><%= place %> weather result:</h1>
+  <ul>
+    <li>Current temperature: <%= temperature %> ºC</li><br>
+    <li>Temperature feels like: <%= feelLike %> ºC</li><br>
+    <li>Humidity: <%= humidity %>%</li><br>
+    <li>Pressure: <%= pressure %> hPa</li><br>
+  </ul>
+
+</div>
+
+
+
+<%- include('bootfooter') -%>

@@ -1,0 +1,17 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Triangle Area</h1>
+        <p> from lengths of 3 sides</p>
+    </div>
+    <form method="post" action="/calcTriangleArea">
+        a <input type="text" name="a"> <br>
+        b <input type="text" name="b"> <br>
+        c <input type="text" name="c"> <br>
+        <input type="submit" value="Calculate Area">
+    </form>
+
+
+<%- include('bootfooter') -%>

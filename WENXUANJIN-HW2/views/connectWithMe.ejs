@@ -1,0 +1,54 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+  <h1>Connect With Me</h1>
+  <form method="post" action="/data">
+    <div class="form-group">
+      <label>Your name</label>
+      <input type="text" class="form-control" name="name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" class="form-control" name="email" placeholder="name@brandeis.edu">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Your current condition</label>
+      <select class="form-control" name="grade">
+        <option>Admitted Student</option>
+        <option>Freshman</option>
+        <option>Sophomore</option>
+        <option>Junior</option>
+        <option>Senior</option>
+      </select>
+      <br>
+    </div>
+    <div class="form-group">
+      Are you willing to joining us and sharing your story?<br>
+      <input class="form-check-input" type="radio" name="answer" value="0">
+      <label class="form-check-label">yes</label><br>
+      <input class="form-check-input" type="radio" name="answer" value="-1">
+      <label class="form-check-label">no</label><br>
+    </div>
+    <br>
+    <div class="form-group">
+      <label>What is your hobbby?</label>
+      <select multiple class="form-control" name="hobby">
+        <option>reading</option>
+        <option>drawing</option>
+        <option>dancing</option>
+        <option>singing</option>
+        <option>cooking</option>
+      </select>
+      <small class="form-text text-muted">You can use Ctrl to choose more than one</small>
+    </div>
+    <br>
+    <div class="form-group">
+      <label >Introduce yourself!</label>
+      <textarea class="form-control" rows="3" name="bio"></textarea>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<hr>
+<%- include('bootfooter') -%>

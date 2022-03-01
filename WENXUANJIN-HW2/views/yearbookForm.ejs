@@ -1,0 +1,21 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Yearbook Form</h1>
+        <p>Enter info for your yearbook</p>
+    </div>
+    <form method="post" action="/yearbookView">
+        <input type="text" name="fullname" size="60"> Full name<br>
+        <input type="text" name="URL" size="60"> URL of your yearbook picture<br>
+        <input type="number" name="birth"> Birth year<br>
+        <input type="text" name="home" size="60"> Home Webpage<br>
+        Quote:<br>
+        Enter your quote below, 100 character or less.<br>
+        <textarea name="quote" rows="5" cols="20"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+<%- include('bootfooter') -%>

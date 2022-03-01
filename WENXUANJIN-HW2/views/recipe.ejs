@@ -1,0 +1,15 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Recipe Finder</h1>
+    </div>
+    <form action="/getRecipes" method="post">
+      What do you want to make?(one word)
+      <input type="text" name="food"><br>
+      <input type="submit">
+    </form>
+
+
+<%- include('bootfooter') -%>

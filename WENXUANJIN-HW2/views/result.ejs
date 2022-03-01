@@ -1,0 +1,23 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+  <h1>Submit successully!</h1>
+  Hi <%= name %>, we have got the following information:<br>
+  <ul>
+    <li>Your email is <%= email %></li>
+    <li>You are a <%= grade %></li>
+    <li><%= answer %></li>
+    <li><% if (typeof(hobby)== "undefined") {%>
+        You don't have any interests
+    <%} else if (typeof(hobby)=="string") {%>
+        You have one interest, <%= hobby %>
+    <%}  else {%>
+              Here are your interests:
+            <ul>
+            <% hobby.map((x) => {%>
+                <li> <%= x %> </li>
+            <% }) %>
+            </ul>
+   <% } %></li>
+  </ul>
+  We will connect with you recently!
+<%- include('bootfooter') -%>

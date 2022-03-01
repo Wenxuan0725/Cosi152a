@@ -1,0 +1,20 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+
+    <h1>ToDo List</h1>
+    <form method="post" action ="/storeTodo">
+      todo: <input type="text" name="todoitem">
+      <input type="submit" value="ADD">
+    </form>
+
+    <ul>
+      <% todoItems.map((item)=>{%>
+        <li><%= item['todo'] %></li>
+      <%})%>
+    </ul>
+
+    todolist is <%= JSON.stringify(todoItems) %>
+
+<%- include('bootfooter') -%>

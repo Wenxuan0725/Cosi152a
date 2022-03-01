@@ -1,0 +1,25 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1><%= name %></h1>
+        <p>Draft Yearbook Entry</p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="<%= url %>" width="100%">
+      </div>
+      <div class="col bg-warning">
+        Welcome page for <%= name %> is <br>
+        <a href="<%= home %>"><%= home %></a><br>
+        Your age is about <%= age %><br>
+        and your age in days is about <%= day %><br>
+      </div>
+      <div class="col bg-info">
+        <h1><%= quote %></h1>
+      </div>
+    </div>
+
+
+<%- include('bootfooter') -%>

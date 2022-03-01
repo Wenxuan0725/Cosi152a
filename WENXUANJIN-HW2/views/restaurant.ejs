@@ -1,0 +1,20 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+<div>
+<form method="post" action="/restaurantHelper">
+  Total meal cost:
+  $<input type="number"
+         name="mealCost"> <br>
+  Tip rate:
+  <input type="number"
+         name="tipRate">% <br>
+  Number of guests:
+  <input type="number"
+         name="numGuests"> <br>
+  <input type="submit" value="Calculate cost per person">
+</form>
+</div>
+
+<%- include('bootfooter') -%>

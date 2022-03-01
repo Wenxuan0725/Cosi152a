@@ -1,0 +1,16 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+<div class="jumbotron">
+  <h1>Konw your place weather</h1>
+  <form action="/getWeather" method="post">
+    <div class="form-group">
+      <label>Which city do you want to find the weather?</label>
+      <input type="text" class="form-control" name="weather"><br>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+
+<%- include('bootfooter') -%>

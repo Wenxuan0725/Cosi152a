@@ -1,0 +1,33 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>
+            <%= title %>
+        </h1>
+        <p> Is this right? </p>
+        The form data is as follows:
+        <pre>
+<%=  JSON.stringify(body,null,5) %>
+        </pre>
+    </div>
+
+    Your name is <%= body.fullname %><br>
+    Your birthday is <%= body.birthday %>
+    Your interests are
+     <%= body.interest %>
+    <hr>
+    <% if (typeof(body.interest)== "undefined") {%>
+        You don't have any interests
+    <%} else if (typeof(body.interest)=="string") {%>
+        You have one interest, <%= body.interest %>
+    <%}  else {%>
+              Here are your interests:
+            <ul>
+            <% body.interest.map((x) => {%>
+                <li> <%= x %> </li>
+            <% }) %>
+            </ul>
+   <% } %>
+<%- include('bootfooter') -%>

@@ -1,0 +1,22 @@
+
+
+  <div class="jumbotron">
+
+    <h1> Welcome to Brandeis!  </h1>
+    <h5>My name is Wenxuan Jin, and people usually call me Wendy. I am a Brandeis student now in class of 24. I was admitted as a gateway scholar in 2020 summer. As an international student from China, I want to share my reason to apply Brandeis, why to attend the gateway program, what I have learned in that program, the learning experience in Brandeis as a freshman etc. I will also invite other Brandeis student to share their stories to help you know everything at Brandeis. You can find the information you need in the website through the links listed below and connect with us. You need to
+      <a href="/auth/google">log in</a> to see all the information.
+      Welcome to Brandeis!
+    </h5>
+    <ul>
+      <li><a href="/about">About the author </a></li>
+      <li><a href="/connectWithMe">Connect with author </a></li>
+      <% if (loggedIn) {%>
+      <li><a href="/WhyBrandeis">Why Brandeis?</a></li>
+      <li><a href="/profiles">See everyone's profile</a></li>
+      <li><a href="/todo">See your to do list </a></li>
+      <li><a href="/todoAjax">See your to do list with Ajax </a></li>
+      <% } %>
+    </ul>
+  </div>
+
+  <!-- Hello World! -->

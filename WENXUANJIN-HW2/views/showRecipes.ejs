@@ -1,0 +1,30 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Recipe Finder</h1>
+    </div>
+<form method="post" action="/getRecipes">
+    what do you want to make? (one word)
+    <input type="text" name="food"><br>
+    <input type="submit">
+</form>
+<% results.map((recipe) => {%>
+<h1> <%= recipe.title %> </h1>
+<ol>
+  <li>
+    <%= recipe.ingredients %>
+  </li>
+</ol>
+<img src="<%= recipe.thumbnail %>" width="200">
+<a href="<%= recipe.href %>">recipe </a>
+<hr>
+<%})%>
+
+
+
+<%= JSON.stringify(results) %>
+
+
+<%- include('bootfooter') -%>

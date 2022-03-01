@@ -1,0 +1,63 @@
+
+<div class="jumbotron bg-light">
+        <h1>Why Brandeis?</h1>
+        <p> During my applying season, I chose to ED Brandeis. I have the following reasons for that decision. </p>
+
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+    A school with small amount of people
+  </button>
+  <div class="collapse" id="collapseExample1">
+    <div class="card card-body">
+    High student staff ratio and more available resources.
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+    A school in Boston area
+  </button>
+  <div class="collapse" id="collapseExample2">
+    <div class="card card-body">
+      <ul>
+        <li>Relatively safe environment with convenient traffic</li>
+        <li>Easy academic academic communication with other universities at Boston</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+    A school focusing on general education.
+  </button>
+  <div class="collapse" id="collapseExample3">
+    <div class="card card-body">
+      <ul>
+        <li>Students are asked to take courses in social science, science, humanity, quantitive reasoning, etc which help them know more about the world</li>
+        <li>According to vino, “A person who know nothing besides his or her major is boring.”</li>
+        <li>As a science student, even though sometimes I feel painful to study a humanity course, that learning experience can provide me a new thinking model to problems in the world.</li> </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+    A school gives student huge freedom on major choose
+  </button>
+  <div class="collapse" id="collapseExample4">
+    <div class="card card-body">
+        All new admitted students do not have their major and they can take any course they think interesting. They only need to declare one major at the end of sophomore and it can still be changed in junior and senior. That policy in some way saved my life. When I was in grade 11, I was interested in chemistry and I had a dream to learn medicine, which was an important reason why I choose Brandeis as my ED since Brandeis does really great job on chem, bio and other related major. However, when I went to grade 12 and learned more course in biology and chemistry, I found that might not what I want to learn in the future four year. When I came to Brandeis, since I was not in any major, I chose a computer science course, a physics course, a theatre course and an English course. Right now, I plan to major in computer science and applied math, which is totally different from my initial. Are those two my final major choice? Who knows!
+    </div>
+  </div>
+
+  <p>Write down your reasons here!</p>
+  <form action="/yourEx" method="post">
+    <textarea name="content" rows="8" cols="80"></textarea>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <p>Other people's reason:</p>
+
+  <% id.forEach(id => { %>
+       <%= id.item %><br>
+
+  <% }) %>
+
+</div>
+<%- include('bootfooter') -%>
